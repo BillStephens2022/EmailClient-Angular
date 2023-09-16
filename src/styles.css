@@ -3,4 +3,11 @@
 
 body {
   padding: 2rem;
+  background-color: lightcoral;
+  color: white;
+  letter-spacing: 0.25rem;
+  font-size: 1.75rem;
+  font-weight: 900;
+  font-family: fantasy, non-serif;
 }
+
