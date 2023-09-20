@@ -14,7 +14,7 @@ export class EmailShowComponent {
     this.email = this.route.snapshot.data['email'];
 
     this.email = route.snapshot.data['email'];
-
+  
     this.route.data.subscribe(({ email }) => {
       this.email = email;
     });

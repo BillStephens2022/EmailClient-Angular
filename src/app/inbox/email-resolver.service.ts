@@ -13,7 +13,7 @@ export class EmailResolverService implements Resolve<Email> {
 
   resolve(route: ActivatedRouteSnapshot) {
     const { id } = route.params;
-
+    console.log(id);
     return this.emailService.getEmail(id).pipe(
       catchError(() => {
         this.router.navigateByUrl('/inbox/not-found');
