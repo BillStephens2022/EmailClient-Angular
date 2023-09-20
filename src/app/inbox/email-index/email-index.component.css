@@ -9,18 +9,24 @@ a.active {
 }
 
 a.active::before {
-  content: '>';
+  content: ">";
   font-size: 20px;
   margin-right: 10px;
 }
 
+.header {
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+
 .content {
-    width: 90%;
+  width: 90%;
+  font-size: 1rem;
 }
 
 .trim {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
 }
