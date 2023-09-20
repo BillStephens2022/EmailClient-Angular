@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent {
+  @Output() dismiss = new EventEmitter();
 
+  constructor(private el: ElementRef) {}
+
+  ngOnInit() {
+    document.body.appendChild(this.el.nativeElement);
+  }
+  
+  ngOnDestroy() {
+    this.el.nativeElement.remove();
+  }
+
+  onDismissClick() {
+    this.dismiss.emit();
+  }
 }
