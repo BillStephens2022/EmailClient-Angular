@@ -6,7 +6,7 @@
 
   Screenshot of app:
 
-  ![app screenshot](./src/assets/images/screenshot.png)
+  ![app screenshot](./docs/assets/images/screenshot.png)
   
   ## Table of Contents
   
