@@ -1,12 +1,19 @@
 .content-text {
-  color: darkgray;
+  color: rgb(81, 80, 80);
   background-color: white;
   padding: 1rem;
   border-radius: 10px;
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 2;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.email-reply-div {
+  padding: 1rem;
 }
